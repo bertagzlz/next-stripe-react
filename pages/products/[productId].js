@@ -12,7 +12,7 @@ export default function Product({ product }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{ title } - Space Jelly</title>
+        <title>{ title } - JRP</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -31,12 +31,12 @@ export default function Product({ product }) {
           </p>
 
           <p className={styles.description}>
-            ${ price.toFixed(2) }
+            { price.toFixed(2) }€
           </p>
 
           <p>
             <button className={styles.button} onClick={() => addToCart({ id })}>
-              Buy
+              Solicitar
             </button>
           </p>
         </div>

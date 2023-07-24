@@ -13,14 +13,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Next App para Universidades</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <p className={styles.description}>
-          The best space jellyfish swag on the web!
+          Productos de aprendizaje de programación para Universidades!
         </p>
+          <p>Valencia, Salamanca, UCAM, UOC.. </p>
 
         <ul className={styles.grid}>
           {products.map(product => {
@@ -28,16 +29,16 @@ export default function Home() {
             return (
               <li key={id} className={styles.card}>
                 <Link href={`/products/${id}`}>
-                  <a>
+
                     <img src={image} alt={title} />
                     <h3>{ title }</h3>
-                    <p>${ price }</p>
+                    <p>{ price } Días</p>
                     <p>{ description }</p>
-                  </a>
+
                 </Link>
                 <p>
                   <button className={styles.button} onClick={() => addToCart({ id })}>
-                    Buy
+                    Solicitar
                   </button>
                 </p>
               </li>
@@ -47,14 +48,14 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link href='
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"'
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+            </Link>
       </footer>
     </div>
   )

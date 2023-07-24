@@ -11,19 +11,19 @@ import Table from '../components/Table';
 const columns = [
   {
     columnId: 'title',
-    Header: 'Product Name'
+    Header: 'Producto'
   },
   {
     columnId: 'quantity',
-    Header: 'Quantity'
+    Header: 'Tiempo en días'
   },
   {
     columnId: 'pricePerUnit',
-    Header: 'Price Per Item'
+    Header: 'Precio por proyecto'
   },
   {
     columnId: 'total',
-    Header: 'Item Total'
+    Header: 'Total'
   }
 ];
 
@@ -75,8 +75,8 @@ export default function Home() {
 
       return (
           <form className={styles.cartQuantity} onSubmit={handleOnSubmit}>
-            <input name="quantity" type="number" min={0} defaultValue={quantity} />
-            <button className={styles.button}>Update</button>
+            <input name="quantity" type="number" min={4} max={20} defaultValue={quantity} />
+            <button className={styles.button}>Actualizar</button>
           </form>
       )
     }
@@ -86,28 +86,28 @@ export default function Home() {
       title,
       quantity: <Quantity />,
       pricePerUnit: pricePerUnit.toFixed(2),
-      total: (quantity * pricePerUnit).toFixed(2)
+      total: ((20-quantity) * pricePerUnit).toFixed(2)
     }
   });
 
   return (
       <div className={styles.container}>
         <Head>
-          <title>Shopping Cart - Space Jelly</title>
+          <title>Carro -JRP</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <main className={styles.main}>
 
           <h1 className={styles.title}>
-            <FaShoppingCart /> Cart
+            <FaShoppingCart /> Carro
           </h1>
 
           <Table className={styles.table} data={data} columns={columns} />
 
           <p className={styles.checkout}>
             <button className={styles.button} onClick={checkout}>
-              Check Out
+              Solicitar
             </button>
           </p>
         </main>

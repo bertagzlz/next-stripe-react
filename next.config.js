@@ -1,3 +1,3 @@
 require('dotenv').config({
-  path: '.env.shared'
+  path: '.env'
 });

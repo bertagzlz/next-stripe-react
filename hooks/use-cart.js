@@ -35,7 +35,7 @@ export function useCartState() {
   });
 
   const subtotal = cartItems.reduce((accumulator, { pricePerUnit, quantity }) => {
-    return accumulator + ( pricePerUnit * quantity );
+    return accumulator + ( pricePerUnit * (20-quantity) );
   }, 0);
 
   const quantity = cartItems.reduce((accumulator, { quantity }) => {

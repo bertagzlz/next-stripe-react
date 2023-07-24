@@ -11,14 +11,14 @@ const Nav = () => {
     <nav className={styles.nav}>
       <p className={styles.navTitle}>
         <Link href="/">
-          <a>Space Jelly Shop</a>
+     JRP (Valencia)
         </Link>
       </p>
       <p className={styles.navCart}>
         <Link href="/cart">
-          <a>
-            <FaShoppingCart /> ${subtotal.toFixed(2)}
-          </a>
+
+            <FaShoppingCart /> {subtotal.toFixed(2)}€
+
         </Link>
       </p>
     </nav>
