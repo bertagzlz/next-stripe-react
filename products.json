@@ -2,10 +2,10 @@
   {
     "id": "0",
     "name": "price_abcd0001",
-    "title": "Space Jelly Tshirt",
-    "description": "Bring Cosmo the space Jellyfish to your wardrobe with this high quality tshirt.",
-    "image": "images/spacejelly-tshirt.jpg",
-    "price": 5.00,
+    "title": "Gestión menus en restaurante",
+    "description": "Usuarios, platos, menus, gestión restaurante. Spring-boot, thymeleaf, spring security, mysql",
+    "image": "images/p0.jpg",
+    "price": 35.00,
     "currency": "EUR"
   },
   {
@@ -13,7 +13,26 @@
     "name": "price_abcd0002",
     "title": "Space Jelly Stickers",
     "description": "Add some flare to your laptop with a sticker of Cosmo the Space Jellyfish.",
-    "image": "images/spacejelly-stickers.jpg",
+    "image": "images/p1.jpg",
+    "price": 10.00,
+    "currency": "EUR"
+  },
+  {
+    "id": "2",
+    "name": "price_abcd0002",
+    "title": "makibooks",
+    "description": "Librería con React, php y mysql. CRUD completo con Redux Toolkit.",
+    "image": "images/p2.jpg",
+    "price": 10.00,
+    "currency": "EUR"
+  },
+
+  {
+    "id": "3",
+    "name": "price_abcd0002",
+    "title": "Finca torrea",
+    "description": "Usuarios, productos, añadas, secciones y valoraciones en una bodega. Spring-boot, thymeleaf, spring security, mysql, bootstrap5, jquery, SPA, responsive",
+    "image": "images/p3.jpg",
     "price": 10.00,
     "currency": "EUR"
   }
